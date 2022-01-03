@@ -250,7 +250,7 @@ section#middle {
 }
 
 .hebergements .card-body:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: .5s ease-in-out;
 }
 
@@ -340,7 +340,7 @@ aside.populaires .card-body {
 }
 
 aside.populaires .card-body:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: .5s ease-in-out;
 }
 
