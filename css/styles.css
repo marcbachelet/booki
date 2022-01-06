@@ -223,10 +223,14 @@ section#middle {
     display: flex;
     flex-flow: column wrap;
     width: 67%;
-    padding: 10px;
+    padding: 20px;
     background-color: #F2F2F2;
     border-radius: 10px;
     margin-right: 10px;
+}
+
+.cards_hebergements h2 {
+    padding-left: 20px;
 }
 
 .hebergements {
@@ -243,7 +247,7 @@ section#middle {
 
 .hebergements .card-body {
     width: 30%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     padding-bottom: 20px;
     background-color: #fff;
     border-radius: 25px;
@@ -283,14 +287,13 @@ section#middle {
 }
 
 a.afficher {
-    padding-left: 10px;
+    padding-left: 20px;
     font-weight: bold;
     text-decoration: none;
     color: #000;
 }
 
 a.afficher:hover {
-    padding-left: 10px;
     font-weight: bold;
     color: #0065FC;
 }
@@ -334,7 +337,7 @@ aside.populaires p {
 }
 
 aside.populaires .card-body {
-    margin-top: 10px;
+    margin: 10px 0 10px 0;
     border-radius: 25px;
     background-color: #fff;
 }
