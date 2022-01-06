@@ -19,7 +19,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     margin-top: 2px;
 }
@@ -74,7 +74,7 @@ ul.menu li a.active {
 /******************************************/
 
 main {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -144,7 +144,7 @@ input[type="submit"].display {
 
 .dispo {
     display: flex;
-    margin: 10px 0;
+    margin: 20px 0;
     height: 60px;
 }
 
@@ -180,7 +180,7 @@ p.text {
 .filtres_items {
     height: 42px;
     width: 250px;
-    margin-left: 10px;
+    margin: 0 0 10px 10px;
     border: 1px solid rgba(133, 130, 130, 0.322);
     border-radius: 25px;
     font-weight: bold;
@@ -255,7 +255,7 @@ section#middle {
 .hebergements .card-body {
     width: 30%;
     margin-bottom: 40px;
-    padding-bottom: 20px;
+    padding: 5px 5px 20px 5px;
     background-color: #fff;
     border-radius: 25px;
 }
@@ -345,6 +345,7 @@ aside.populaires p {
 
 aside.populaires .card-body {
     margin: 10px 0 10px 0;
+    padding: 5px;
     border-radius: 25px;
     background-color: #fff;
 }
@@ -361,9 +362,16 @@ aside.populaires .card-body:hover {
 }
 
 aside.populaires .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding-left: 20px;
     width: 60%;
     height: 200px;
+}
+
+aside.populaires .info .star {
+    padding-bottom: 10px;
 }
 
 aside.populaires a {
@@ -399,7 +407,7 @@ aside.populaires .card-body i.grey {
 section#activite {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 section#activite .cards-activite {
@@ -446,7 +454,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     padding: 40px;
     background-color: #F2F2F2;
@@ -472,20 +480,21 @@ footer .liens_footer a:hover {
     color: #0065FC;
 }
 
-/****************************************/
-/********* Media Queries ****************/
-/****************************************/
+/*****************************************/
+/********* Media Queries 992px ***********/
+/*****************************************/
 
 @media screen and (max-width: 992px) 
 {   
     body {
-        width: 90%;
+        width: 100%;
     }
 
     header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 90%;
     }
 
     nav {
@@ -508,6 +517,14 @@ footer .liens_footer a:hover {
         border-top: 0;
         margin-bottom: -2px;
         border-bottom: 2px solid #0065fc;      
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .recherche {
+        margin: 0 auto;
     }
 
     .recherche .form_responsive .fa-search {      
@@ -564,7 +581,15 @@ footer .liens_footer a:hover {
         object-fit: cover;
     }
 
+    footer {
+        width: 95%;
+    }
+
 }
+
+/*****************************************/
+/********* Media Queries 768px ***********/
+/*****************************************/
 
 @media screen and (max-width: 768px) 
 {   
@@ -600,8 +625,22 @@ footer .liens_footer a:hover {
         padding-bottom: 0px;
     }
 
+    section.top {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section.top h1 {
+        font-size: 25px;
+    }
+
+    section.top p {
+        font-size: 18px;
+    }
+
     .recherche {
-        width: 400px;
+        width: 350px;
+        margin: 0;
         background-color: #fff;
     }
 
@@ -661,7 +700,7 @@ footer .liens_footer a:hover {
         display: inline-block;
         position:absolute;
         top: 23px;
-        left: 352px;
+        left: 302px;
         height: 70px;
         width: 60px;
         font-size: 25px;
@@ -673,8 +712,35 @@ footer .liens_footer a:hover {
         align-content: center;
     }
 
+    i.fa-info {
+        padding: 7px 0 0 13px;
+    }
+
+    aside.populaires {
+        border-radius: 0;
+    }
+
+    .cards_hebergements {
+        padding: 10px;
+        background-color: #fff;
+    }
+
+    .cards_hebergements h2, .cards_hebergements a.afficher {
+        padding-left: 0;
+    }
+
+    .cards_hebergements .card-body {
+        box-shadow: 5px 5px 15px #f2f2f2,
+                -5px 5px 15px #f2f2f2;
+    }
+
+    section#activite {
+        width: 97%;
+        margin: 0 auto;
+    }
+
     section#activite .card {
-        width: 90%;
+        width: 100%;
     }
 
     section#activite .card-body img {
@@ -692,6 +758,7 @@ footer .liens_footer a:hover {
     footer {
         display: flex;
         flex-direction: column;
+        padding: 25px;
     }
 
     footer .footer_elements {
