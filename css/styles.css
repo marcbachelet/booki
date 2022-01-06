@@ -19,6 +19,8 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
     margin-top: 2px;
 }
 
@@ -70,6 +72,11 @@ ul.menu li a.active {
 /******************************************/
 /************* Top ************************/
 /******************************************/
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
 
 section.top {
     display: flex;
@@ -398,11 +405,7 @@ section#activite {
 section#activite .cards-activite {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-section#activite h2 {
-    padding-left: 10px;
+    justify-content: space-between;
 }
 
 section#activite h4 {
@@ -443,9 +446,10 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
-    padding-left: 10px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 40px;
     background-color: #F2F2F2;
-    border-radius: 10px;
 }
 
 footer .footer_elements {
